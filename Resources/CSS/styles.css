@@ -9,6 +9,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Nunito', sans-serif;
+    overflow: hidden;
     
 }
 
@@ -16,7 +17,7 @@ body{
     display: flex;
     text-align: center;
     margin: 0 auto;
-    margin-top: 10vh;
+    margin-top: 5vh;
     margin-bottom: 10vh;
     width: 85vw;
     height: 75vh;
@@ -39,8 +40,12 @@ body{
     color: #ffffff;
     float: right;
     margin: 3vw;
+    transition: 0.8s ease-in;
+    cursor: pointer;
 }
-
+.fa-sync-alt:hover{
+    color: red;
+}
 #date {
     position: absolute;
     bottom: 0;
@@ -60,9 +65,6 @@ body{
 ul{
     list-style: none;
 }
-
-
-
 .item{
     display: flex;
     justify-content: space-between;
@@ -71,17 +73,35 @@ ul{
     border-bottom: 2px solid black;
     
 }
-.fa-circle{
+.far{
     font-size: 7vw;
     margin: 2vw;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.fa-circle:hover{
+    color: rgb(21, 212, 21);
+}
+.fa-check-circle{
+    color: green;
 }
 .text{
     font-size: 6vw;
-    text-decoration: underline;
+    color: rgb(15, 15, 15);
+}
+.line-through{
+    text-decoration: line-through;
+    color: gray;
 }
 .fa-trash-alt{
     font-size: 7vw;
     margin: 2vw;
+    cursor: pointer;
+    transition: 0.8s;
+    
+}
+.fa-trash-alt:hover{
+    color: red;
 }
 
 .add-item{
@@ -89,7 +109,7 @@ ul{
     justify-content: center;
     position: absolute;
     bottom: 0;
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
     border-top: 1px solid black;
 }
 .fa-plus-circle{
@@ -101,4 +121,213 @@ ul{
     font-size: 5vw;
     margin: 2vw;
     border: dotted rgb(28, 59, 196);
+}
+
+.contact{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #1f1d1d;
+    position: absolute;
+    bottom: 0;
+}
+.fa-github-square{
+    font-size: 10vw;
+    color: #dfd3d3;
+    transition: 0.8s;
+}
+.fa-github-square:hover{
+    color: rgb(226, 31, 31);
+}
+.fa-linkedin{
+    font-size: 10vw;
+    color: #dfd3d3;
+    transition: 0.8s;
+}
+.fa-linkedin:hover{
+    color: rgb(226, 31, 31);
+}
+.my-website{
+    font-size: 6vw;
+    color: #dfd3d3;
+    transition: 0.8s;
+}
+.my-website:hover{
+    color: rgb(226, 31, 31);
+}
+a{
+    text-decoration: none;
+}
+
+/*ipad*/
+@media only screen and (min-width: 768px){
+
+    .far{
+        font-size: 5vw;
+        margin: 1vw;
+    }
+    .text{
+        font-size: 4vw;
+    }
+    .fa-trash-alt{
+        font-size: 5vw;
+        margin: 1vw;
+    }
+}
+
+/*screens wider than 1000px*/
+@media only screen and (min-width: 1000px){
+    .container{
+        width: 70vw;
+        height: 75vh;
+    }
+    
+    .header{
+        width: 70%;
+        height: 15%;
+    }
+    .fa-sync-alt{
+        font-size: 5vw;
+        margin: 1vw;
+    }
+    #date {
+        font-size: 4vw;
+    }
+    
+    .content{
+        margin-top: 15vh;
+        height: 85%;
+    }
+    .far{
+        font-size: 5vw;
+    }
+    .text{
+        font-size: 4vw;
+    }
+    .fa-trash-alt{
+        font-size: 5vw;
+    }
+    
+    .fa-plus-circle{
+        font-size: 6vw;
+        margin-bottom: 4vh;
+    }
+    #input{
+        font-size: 4vw;
+        margin-bottom: 4vh;
+    }
+    
+    .fa-github-square{
+        font-size: 7vw;
+    }
+    .fa-linkedin{
+        font-size: 7vw;
+    }
+    .my-website{
+        font-size: 5vw;
+    }  
+}
+
+/*screens 1400px wide and above */
+@media only screen and (min-width: 1400px){
+    
+    .fa-sync-alt{
+        font-size: 4vw;
+    }
+    #date {
+        font-size: 3vw;
+    }
+    
+    .far{
+        font-size: 3vw;
+    }
+    .text{
+        font-size: 3vw;
+    }
+    .fa-trash-alt{
+        font-size: 3vw;
+    }
+    
+    .fa-plus-circle{
+        font-size: 4vw;
+        margin-bottom: 2vh;
+    }
+    #input{
+        font-size: 3vw;
+        margin-bottom: 4vh;
+    }
+    
+    .fa-github-square{
+        font-size: 5vw;
+    }
+    .fa-linkedin{
+        font-size: 5vw;
+    }
+    .my-website{
+        font-size: 4vw;
+    }  
+}
+
+/*mobile landscape*/
+@media only screen and (max-height: 414px){
+    .container{
+        width: 60vw;
+    }
+    
+    .header{
+        width: 60%;
+        height: 15%;
+    }
+    .fa-sync-alt{
+        font-size: 3vw;
+        margin: 1vw;
+    }
+    #date {
+        font-size: 3vw;
+    }
+    
+    .content{
+        margin-top: 15vh;
+        height: 85%;
+    }
+    .far{
+        font-size: 3vw;
+        margin: 1vw;
+    }
+    .text{
+        font-size: 2vw;
+        text-decoration: underline;
+    }
+    .fa-trash-alt{
+        font-size: 3vw;
+        margin: 1vw;
+    }
+    
+    .add-item{
+        margin-bottom: 15vh;
+        border-top: 1px solid black;
+    }
+    .fa-plus-circle{
+        font-size: 4vw;
+        margin: 2vw;
+        color: rgb(28, 59, 196);
+    }
+    #input{
+        font-size: 3vw;
+        margin: 2vw;
+        border: dotted rgb(28, 59, 196);
+    }
+    
+   
+    .fa-github-square{
+        font-size: 5vw;
+    }
+    .fa-linkedin{
+        font-size: 5vw;
+    }
+    .my-website{
+        font-size: 4vw;
+    }
 }
