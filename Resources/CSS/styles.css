@@ -116,6 +116,11 @@ ul{
     font-size: 9vw;
     margin: 2vw;
     color: rgb(28, 59, 196);
+    cursor: pointer;
+    transition: 0.8s;
+}
+.fa-plus-circle:hover{
+    color: green;
 }
 #input{
     font-size: 5vw;
