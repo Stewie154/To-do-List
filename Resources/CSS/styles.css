@@ -267,8 +267,8 @@ a{
     }  
 }
 
-/*screens 1400px wide and above */
-@media only screen and (min-width: 1400px){
+/*screens 1200px wide and above */
+@media only screen and (min-width: 1200px){
     
     .fa-sync-alt{
         font-size: 4vw;
@@ -368,3 +368,26 @@ a{
         font-size: 4vw;
     }
 }
+
+/*low height laptops*/
+@media only screen and (max-width: 1366px) and (max-height: 768px){
+    .far{
+        font-size: 2vw;
+    }
+    .text{
+        font-size: 2vw;
+    }
+    .fa-trash-alt{
+        font-size: 2vw;
+    }
+    
+    .fa-plus-circle{
+        font-size: 4vw;
+        margin-bottom: 2vh;
+    }
+    #input{
+        font-size: 3vw;
+        margin-bottom: 4vh;
+    }
+}
+
